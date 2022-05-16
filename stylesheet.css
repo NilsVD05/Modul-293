@@ -1,0 +1,272 @@
+body{
+    display: grid;
+    grid-template-columns:16% 40% auto ;
+    grid-template-rows:200px 362px auto 140px;
+    background-color: #85dfff;
+    grid-gap: 5px;
+}
+header{
+    padding-left: 15px;
+    grid-row: 1;
+    grid-column: 1/ span 3;
+    font-family: Tahoma;
+    font-size: 50px;
+    color: white;
+    background-image: url("bilder/headerBild.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    border-radius: 10px;
+    border: black;
+    border-style: solid;
+    padding-top: 120px;
+
+
+}
+div{
+    grid-row: 1;
+    grid-column: 3;
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+}
+
+
+nav{
+    padding-top: 20px;
+    padding-left: 10px;
+    grid-row: 2;
+    grid-column: 1 /span 1 ;
+    background: #4488BBFF;
+    font-family: Tahoma;
+    font-size: 20px;
+    border-radius: 10px;
+    border: black;
+    border-style: solid;
+}
+
+nav a{
+    font-family: Tahoma;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+main{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    grid-row: 2 /span 2;
+    grid-column: 2/ span 2;
+    background: linear-gradient(#ffffff 50%, rgba(255,255,255,0) 0) 0 0,
+    radial-gradient(circle closest-side, #FFFFFF 53%, rgba(255,255,255,0) 0) 0 0,
+    radial-gradient(circle closest-side, #FFFFFF 50%, rgba(255,255,255,0) 0) 55px 0 #48B;
+    background-size: 110px 200px;
+    background-repeat: repeat-x;    font-family: Tahoma;
+    font-size: 20px;
+    border-radius: 10px;
+    border: black;
+    border-style: solid;
+
+}
+.content1{
+    padding-right: 50%;
+}
+
+.imgindex{
+    padding-left: 50%;
+}
+.imgsuess{
+    padding-top: 20px;
+}
+
+aside{
+    grid-row: 3;
+    grid-column: 1;
+    background: #4488BBFF;
+    padding-left: 20px;
+    font-family: Tahoma;
+    font-size: 20px;
+    border-radius: 10px;
+    border: black;
+    border-style: solid;
+}
+
+
+
+footer{
+    font-family: Tahoma;
+    font-size: 20px;
+    grid-row: 4;
+    grid-column: 2/ span 2;
+    background: #4488BBFF;
+    padding-left: 30px;
+    padding-top: 30px;
+    border-radius: 10px;
+    border: black;
+    border-style: solid;
+
+}
+.logo{
+    grid-row: 4;
+    grid-column: 1;
+    background: url("bilder/kisspng-blue-fish-logo-globe-aqua-browser-2-5ab0cfd0764f58.2485227915215369764846.png") no-repeat center;
+    background-size: 30%;
+}
+
+
+.navbutton{
+    background-color: #4488BBFF;
+    margin: 5px;
+    height: 15%;
+    width: 93%;
+    border: black;
+    border-style: dashed;
+    border-radius: 10px;
+    font-size: 20px;
+}
+.navbutton:hover{
+    background-color: lightblue;
+    border-style: solid;
+
+}
+
+table {
+    background-color: #4488BBFF;
+    border-collapse: collapse;
+    border: none;
+}
+
+
+td, th {
+    text-align: left;
+    padding: 0.5em 1em;
+}
+
+table, th, td { border: thin solid; }
+
+
+
+
+
+
+
+
+
+
+
+#galerie {
+    padding: 4em 6em;
+}
+
+#galerie figure {
+    background: #FFF;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    height: 15em;
+    margin: 0 0 1em 2em;
+    overflow: hidden;
+    padding: 0;
+    width: 15em;
+    transition: all 0.25s ease-in;
+}
+
+#galerie figure img {
+    width: 15em;
+    height: 15em;
+}
+
+#galerie figure:hover,
+#galerie figure:focus {
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.8);
+    margin: -1em 0px 0 20px;
+    padding: 5px 5px 30px 5px;
+    width: 15em;
+    z-index: 2;
+    transform: scale(2);
+}
+
+#galerie figcaption {
+    color: #333;
+    font: cursive 10px/150%;
+    font-family: "Tahoma";
+    position: relative;
+    text-align: center;
+    width: 15em;
+}
+
+#galerie figure:nth-child(3n-2):hover,
+#galerie figure:nth-child(3n-2):focus {
+    transform: scale(2) rotate(-2.5deg);
+}
+
+#galerie figure:nth-child(5n):hover,
+#galerie figure:nth-child(5n):focus {
+    transform: scale(2) rotate(2.5deg);
+}
+
+#galerie:after {
+    clear: both;
+    content: " ";
+    display: block;
+}
+
+@media only screen and (max-width: 75em) {
+    body {
+        width: 100%;
+        margin: 2% 0;
+        padding: 5%;
+    }
+    #galerie {
+        width: 850px;
+        margin: 100px auto;
+    }
+}
+
+@media only screen and (max-width: 50em) {
+    #galerie {
+        width: 100%;
+        margin: 100px auto;
+    }
+}
+
+
+main form {
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    display: grid;
+    grid-template-columns: 200px auto;
+    grid-gap: 10px;
+}
+
+main form input, main form label {
+    line-height: 30px;
+}
+
+main form textarea {
+    height: 200px;
+}
+
+input[type="submit"] {
+    color: rgb(250, 250, 250);
+    background: rgb(14, 72, 120);
+    font-size: 12pt;
+    font-weight: bold;
+    box-shadow: 5px 5px 5px grey;
+    cursor: pointer;
+
+}
+main form label{
+    grid-column: 1;
+}
+
+main form input, main form select {
+    grid-column: 2;
+}
+
+input[type="submit"]:hover, input[type="submit"]:active {
+    background: lightgreen;
+    color: black;
+    box-shadow: 5px 5px 5px green;
+}
